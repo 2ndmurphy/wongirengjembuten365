@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wongirengjembuten365</title>
+</head>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: crimson;
+  }
+
+  .wong {
+    width: 325px;
+    height: 400px;
+    position: relative;
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px 5px rgb(63, 62, 62);
+  }
+
+  .wong img {
+    width: 325px;
+    height: 300px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px gray;
+  }
+
+  .wong h1 {
+    font-size: 20px;
+    font-family: Helvetica;
+  }
+
+  .wong input {
+    position: absolute;
+    top: 94%;
+  }
+
+  .wong form button {
+    position: absolute;
+    top: 93.5%;
+    left: 58%;
+    padding: 2px;
+  }
+</style>
+
+<body>
+  <div class="wong">
+    <img src="wongirengjembuten365.jpg" alt="">
+    <h1>@wongirengjembuten365</h1>
+    <p>hello baby gurl...😋😋</p>
+    <form 
+      action="#"
+      onsubmit="sendMessage()"
+    >
+      <input type="text" id="pesan" placeholder="kirim pesan....">
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <script>
+    const sendMessage = () => {
+      const url = `https://wa.me/6287844304865?text=${pesan.value}`
+      window.open(url, "_blank")
+      console.log(pesan.value);
+    }
+  </script>
+</body>
+</html>
